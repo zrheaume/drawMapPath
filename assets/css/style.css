@@ -1,0 +1,39 @@
+
+i {
+    display: inline;
+}
+.fa-terminal{
+    display: inline;
+}
+
+#wrapper{
+    height: 600px;
+}
+
+
+
+/* #interface-panel {
+    width: 30%;
+    float: left;
+} */
+#left-column{
+    width: 30%;
+    float: left;
+}
+
+#map-panel{
+    width: 69%;
+    float: left;
+}
+
+/* #address-input{
+    width: 600px;
+}
+
+#speed-input {
+    width: 200px;
+} */
+
+#map{
+    height: 100%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Send from PC Lee</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="left-column">
+        <div class="card" id="interface-panel">
+            <div class="card-header">
+                <div id="address-form">
+                    <label for="address-input">Destination:</label><br>
+                    <input id="address-input" class="form-control" placeholder="119 International Drive, Portsmouth, NH">
+                    <!-- <label for="speed-input">Days for delivery:</label><br>
+                    <input id="speed-input" class="form-control" placeholder="3" value="3"> <br> -->
+                    <button id="go-button" class="btn btn-outline-secondary"><i class="fas fa-sign-in-alt"></i> Show
+                        Path </button>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="interface-panel">
+            <div class="card-header">
+                <b>GeoInfo</b>
+            </div>
+            <div class="card-body">
+                <div id="address" class="info-display">
+                    <b>Full address: </b><span class="address-display">119 International Dr, Portsmouth, NH 03801, USA</span>
+                </div>
+                <br>
+                <div id="coordinates" class="info-display">
+                    <b>Latitude: </b><span id="lat-display">43.0801792</span><br>
+                    <b>Longitude: </b><span id="lng-display">-70.8016885</span>
+                </div>
+                <br>
+                <div id="geocodes" class="info-display">
+                    <b>Google place ID: </b><span id="global-geo">ChIJXVdPv-e_4okRd9U9R1IC2NQ</span>
+                </div>
+                <br>
+                <div id="distance-panel" class="info-display">
+                    <b>Lat/Lng Distance: </b><span id="distance-disp"></span>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="map-panel">
+        <div class="card-body">
+            <div id="wrapper">
+                <div id="map">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtDQPX6n_jaX_BnSOTLnd4jxeRRq0HScg&callback=initMap"
+        async defer></script>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
